@@ -1,0 +1,685 @@
+/* ===========================================
+   K.S BHAI Premium Landing Page
+   Part 2A
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#070707;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/* Background */
+
+.background-blur{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+    background:
+    radial-gradient(circle at top,#FFD54F22 0%,transparent 35%),
+    radial-gradient(circle at bottom,#00C6FF18 0%,transparent 35%),
+    #070707;
+
+}
+
+/* Main Container */
+
+.container{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* Header */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.logo{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #FFD700;
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,.45);
+
+}
+
+/* Title */
+
+.site-title{
+
+    margin-top:20px;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:#FFD700;
+
+    letter-spacing:2px;
+
+}
+
+.tagline{
+
+    margin-top:8px;
+
+    color:#bbbbbb;
+
+    font-size:18px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#FFD700;
+
+    color:#111;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#cfcfcf;
+
+    font-size:18px;
+
+}
+/* ===========================================
+   PART 2B
+===========================================*/
+
+/* Telegram Button */
+
+.telegram-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:35px;
+
+padding:18px 34px;
+
+background:linear-gradient(135deg,#0088cc,#00b2ff);
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:700;
+
+border-radius:60px;
+
+transition:.35s;
+
+box-shadow:0 15px 40px rgba(0,136,204,.35);
+
+}
+
+.telegram-btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 25px 55px rgba(0,136,204,.50);
+
+}
+
+/* Feature Section */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+margin-top:80px;
+
+}
+
+/* Glass Card */
+
+.feature-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:20px;
+
+padding:30px;
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#FFD700;
+
+box-shadow:0 25px 45px rgba(255,215,0,.20);
+
+}
+
+/* Icon */
+
+.icon{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+.feature-card h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+color:#FFD700;
+
+}
+
+.feature-card p{
+
+color:#cfcfcf;
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+/* Status */
+
+.status-section{
+
+margin-top:90px;
+
+text-align:center;
+
+}
+
+.status-section h2{
+
+font-size:34px;
+
+margin-bottom:40px;
+
+color:#FFD700;
+
+}
+
+.status-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.status-card{
+
+background:#111;
+
+border-radius:18px;
+
+padding:28px;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.status-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#FFD700;
+
+box-shadow:0 20px 40px rgba(255,215,0,.15);
+
+}
+
+.status-card span{
+
+display:block;
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.status-card p{
+
+font-size:16px;
+
+font-weight:600;
+
+color:#ffffff;
+
+}
+/* ===========================================
+   PART 2C
+===========================================*/
+
+/* Countdown */
+
+.countdown-section{
+
+margin-top:90px;
+
+text-align:center;
+
+}
+
+.countdown-section h2{
+
+font-size:34px;
+
+margin-bottom:35px;
+
+color:#FFD700;
+
+}
+
+.countdown-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.time-box{
+
+width:110px;
+
+padding:22px 10px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:18px;
+
+backdrop-filter:blur(15px);
+
+transition:.35s;
+
+}
+
+.time-box:hover{
+
+transform:translateY(-6px);
+
+border-color:#FFD700;
+
+box-shadow:0 18px 35px rgba(255,215,0,.18);
+
+}
+
+.time-box span{
+
+display:block;
+
+font-size:34px;
+
+font-weight:700;
+
+color:#FFD700;
+
+}
+
+.time-box small{
+
+display:block;
+
+margin-top:8px;
+
+font-size:14px;
+
+color:#bdbdbd;
+
+}
+
+/* Community */
+
+.community-info{
+
+margin-top:90px;
+
+text-align:center;
+
+}
+
+.community-info h2{
+
+font-size:34px;
+
+margin-bottom:30px;
+
+color:#FFD700;
+
+}
+
+.community-info ul{
+
+list-style:none;
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+.community-info li{
+
+background:rgba(255,255,255,.05);
+
+margin-bottom:15px;
+
+padding:16px;
+
+border-radius:15px;
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:17px;
+
+transition:.3s;
+
+}
+
+.community-info li:hover{
+
+border-color:#FFD700;
+
+transform:translateX(6px);
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:100px;
+
+padding:35px 20px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+color:#9e9e9e;
+
+font-size:15px;
+
+}
+
+footer p{
+
+margin:6px 0;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.site-title{
+
+font-size:36px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.telegram-btn{
+
+width:100%;
+
+padding:18px;
+
+font-size:17px;
+
+}
+
+.logo{
+
+width:100px;
+
+height:100px;
+
+}
+
+.countdown-box{
+
+gap:12px;
+
+}
+
+.time-box{
+
+width:80px;
+
+padding:16px 8px;
+
+}
+
+.time-box span{
+
+font-size:26px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+width:94%;
+
+}
+
+.badge{
+
+font-size:13px;
+
+}
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+.community-info li{
+
+font-size:15px;
+
+}
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#FFD700;
+
+border-radius:50px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+/* Selection */
+
+::selection{
+
+background:#FFD700;
+
+color:#000;
+
+}
+/* ===========================================
+   Scroll Reveal Animation
+=========================================== */
+
+.feature-card,
+.status-card,
+.countdown-section,
+.community-info{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .7s ease;
+
+}
+
+
+.feature-card.show,
+.status-card.show,
+.countdown-section.show,
+.community-info.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* Image Smooth Load */
+
+.logo{
+
+    transition:.5s ease;
+
+}
+
+.logo.loaded{
+
+    transform:scale(1.05);
+
+}
